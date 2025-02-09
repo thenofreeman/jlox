@@ -52,7 +52,7 @@ public class GenerateAst {
         for (String type : types) {
             String typeName = type.split(":")[0].trim();
             writer.println("\t\tR visit" + typeName + baseName
-                           + "{" + typeName + " " + baseName.toLowerCase() + "};");
+                           + "(" + typeName + " " + baseName.toLowerCase() + ");");
         }
         writer.println("\t}");
         writer.println();
